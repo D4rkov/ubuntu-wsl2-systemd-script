@@ -51,7 +51,7 @@ function sysdrive_prefix {
 }
 
 sudo hwclock -s
-sudo apt-get update && sudo apt-get install -yqq daemonize dbus-user-session fontconfig
+pacman -S daemonize dbus-user-session fontconfig
 
 sudo cp "$self_dir/start-systemd-namespace" /usr/sbin/start-systemd-namespace
 sudo cp "$self_dir/enter-systemd-namespace" /usr/sbin/enter-systemd-namespace
